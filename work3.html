@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+    	<meta charset="utf-8" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	    <title>大数据下的综艺— — 明星大侦探为什么这么火</title>
+	    <link rel="stylesheet" href="css/ides.css">
+    
+	</head>
+	<body>
+		<header></header>
+		<div class="i3b1">
+			<img class="left" src="img3/p1.png" alt=""/>
+			<p class="right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一档明星推理真人秀网综《明星大侦探》从众多同质化网综中脱颖而出。从芒果TV官方平台播放量来看，已完结的四季节目分别高达12.1亿、23 亿、37.3 亿和 25.3 亿；从豆瓣评分来看，第一季 9.2，第二季 9.0，第三季 9.1，第四季 8.7，豆瓣社区平均每季 5 万+人参与评价，微博话题阅读量超 141 亿、话题讨论达 1840.9万次，掀起一场全民推理狂潮。本篇分析选择《明星大侦探》系列中综合表现最突出的第三季作为研究对象，通过数据爬取，数据处理，使用情感极性分析、基于划分的K-means聚类分析、基于LDA模型的文本主题聚类等算法进行数据分析，研究该综艺脱颖而出的原因，并进一步扩展探讨，为推理类网综提供启示和建议。</p>
+		</div>
+		<p class="tittle">数据分析流程</p>
+		<div class="m i3b2">
+			<img src="img3/p2.png" style="width:1100px;" alt="数据分析流程"/>
+		</div>
+		<h1>数据爬取</h1>
+		<div class="m i3b3">
+			<table class="table1" border="0px">
+				<tr>
+					<td><img src="img3/p3.png" style="width:900px;" alt=""/></td>
+					<td><img src="img3/p4.png" style="width:600px;" alt=""/></td>
+				</tr>
+			</table>
+		</div>
+		<h1>数据处理</h1>
+		<div class="m i3b4">
+			<table>
+				<tr><td align="center"><img src="img3/p5.png" style="width:1100px;" alt=""/></td></tr>
+				<tr>
+					<td>
+						<div id="wordSpace"></div>
+						<script src="https://d3js.org/d3.v3.min.js"></script>
+						<script src='https://bl.ocks.org/ericcoopey/6382449#d3.layout.cloud.js'>
+						</script><script  src="js/wordle.js"></script>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<h1>数据分析</h1>
+		<h2>基于情感词典的情感极性分析</h2>
+		<div class="m i3b5_1">
+			<img src="img3/p6.png" style="width:1100px;" alt="数据分析流程"/>
+		</div>
+		<h2>基于词向量的K-means分析</h2>
+		<div class="m i3b5_4">
+			<table class="table1" border="0px">
+				<tr align="center"><td colspan="2"><img src="img3/p7.png" style="width:1100px;" alt=""/></td></tr>
+				<tr align="center"><td colspan="2"><img src="img3/k.png" style="width:900px;" alt=""/></td></tr>
+				<tr align="center"><td colspan="2"><img src="img3/kk.png" style="width:900px;" alt=""/></td></tr>
+				<tr>
+					<td align="center"><img src="img3/kkk0.png" style="width:900px;" alt=""/></td>
+					<td align="center"><img src="img3/kkk.png" style="width:450px;" alt=""/></td>
+				</tr>
+			</table>
+		</div>
+		<h2>基 LDA的聚类分析</h2>
+		<div class="m i3b5_5">
+			<table class="table1" border="0px">
+				<tr align="center"><td><img src="img3/p8.png" style="width:1300px;" alt=""/></td></tr>
+				<tr align="center"><td><img src="img3/lda1.png" style="width:600px;" alt=""/></td></tr>
+				<tr align="center"><td style="padding-top:100px;">明星大侦探关于节目内容的词云图</td></tr>
+				<tr>
+					<td>
+						<div id="wordSpace1"></div>
+						<script src="https://d3js.org/d3.v3.min.js"></script>
+						<script src='https://bl.ocks.org/ericcoopey/6382449#d3.layout.cloud.js'>
+						</script><script  src="js/wordle1.js"></script>
+					</td>
+				</tr>
+				<tr align="center"><td style="padding-top:100px;">明星大侦探关于节目结构的词云图</td></tr>
+				<tr>
+					<td>
+						<div id="wordSpace2"></div>
+						<script src="https://d3js.org/d3.v3.min.js"></script>
+						<script src='https://bl.ocks.org/ericcoopey/6382449#d3.layout.cloud.js'>
+						</script><script  src="js/wordle2.js"></script>
+					</td>
+				</tr>
+				<tr align="center"><td style="padding-top:100px;">明星大侦探关于节目评价的词云图</td></tr>
+				<tr>
+					<td>
+						<div id="wordSpace3"></div>
+						<script src="https://d3js.org/d3.v3.min.js"></script>
+						<script src='https://bl.ocks.org/ericcoopey/6382449#d3.layout.cloud.js'>
+						</script><script  src="js/wordle3.js"></script>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<h1>数据结论</h1>
+		<div class="m i3b6">
+			<table class="table1" border="0px">
+				<tr align="center"><td>根据数据分析后得到的三个主题：节目结构、节目内容、节目评价，为“如何打造一档爆款推理网综？”给出以下参考建议。</td></tr>
+				<tr align="center"><td style="padding-top:30px;padding-bottom:100px;"><img src="img3/p9.png" style="width:600px;" alt=""/></td></tr>
+			</table>
+		</div>
+
+	</body>
+</html>

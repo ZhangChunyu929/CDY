@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CYDesign</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+  <header>
+		<!-- webname -->
+		<a href="#" class="webname">CYD</a>
+		<!-- 导航栏 -->
+		<ul>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#project">Project</a></li>
+			<li><a href="#work">Work</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</header>
+	<!-- 内容 -->
+	<section class="banner"></section>
+	<script>
+		// 添加滚动事件
+		window.addEventListener('scroll', function() {
+			//获取元素
+			var header = document.querySelector("header");
+			// 添加类
+			header.classList.toggle("sticky", window.scrollY > 0 )
+		});
+	</script>
+	
+	<div class="logo" style="background:url(img/logo.png); background-size:80%; background-repeat:no-repeat; background-position:center;"></div>
+	<div class="l" id="l" align="center">
+		<h1 class="loader">
+			<span>C</span>
+			<span>Y</span>
+			<span>D</span>
+			<span>E</span>
+			<span>S</span>
+			<span>I</span>
+			<span>G</span>
+			<span>N</span>
+		</h1>
+	</div>
+
+	<!-- 外边框 -->
+	<script src="https://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+	<div class="heart-btn">
+	<!-- 内容 -->
+		<div class="content">
+			<!-- 爱心 -->
+			<span class="heart"></span>
+			<!-- 文字Liek -->
+			<span class="like">Like</span>
+			<!-- 数字 -->
+			<span class="numb"></span>
+		</div>
+	</div>
+	
+	<script>
+		$(document).ready(function() {
+			// 根据类名添加点击事件
+			$('.content').click(function() {
+				// 根据类切换类名
+				$(this).toggleClass('heart-active')
+				$('.like').toggleClass('heart-active')
+				$('.heart').toggleClass('heart-active')
+				$('.numb').toggleClass('heart-active')
+			})
+		})
+	</script>
+
+	<div class="footer"><div class="clear"> </div>
+		<!-- scroll_top_btn -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+	    <script type="text/javascript">
+			$(document).ready(function() {
+			
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+		<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+		</script>
+		<a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+	</div>
+
+<!-----start-project------>
+	<div class="project" id="project">
+		<table class="ptable" id="ptable" border="0px">
+		<tr>
+			<td class="tuceng" id="tuceng">
+				<img src="img/c4.png">
+				<img src="img/c3.png">
+				<img src="img/c2.png">
+				<img src="img/c1.png">
+			</td>
+			<td  class="wenzi" id="wenzi">
+				<h1>AIRoom家源网</h1>
+				<p style="margin-top:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;无论是长租还是短租，如今酒店已不再是当代人出行住宿的唯一选择。租房平台近几年凭借房源的个性化、多样性和居家感等优势逐渐占领市场。但伴随租房平台出现的种种负面新闻，为房客在选择住房租房时增加了诸多担忧和风险，如：安全问题频出、卫生监管不规范、追责维权难、假房源和假房东等。</p>
+			</td>
+				<td class="xq" id="xq">
+				<a class="xiangqing" href="pro.html" target="_blank">查看详情</a>
+			</td>
+		</tr>
+		</table>
+	</div>
+	
+<!-----start-idea------>
+	<div class="work" id="work">
+		<div class="card" style="margin-right:40px;"><!--第一个卡片-->
+            <div class="face face1"> <!--显示页-->
+                <div class="context"> <!--显示页内容-->
+					<img src="img/p1.png">
+                    <h3 style="left:145px;">平面作品</h3>
+                </div>
+            </div>
+            <div class="face face2"> <!--附页-->
+                <div class="context">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;平面作品使用Adobe Photoshop、Adobe Illustrator完成。</p>
+                    <a class="rm" id="rm1" href="work1.html" target="_blank">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="margin-right:40px;"> <!--第二个卡片-->
+            <div class="face face1">
+                <div class="context">
+                    <img src="img/p2.png">
+                    <h3 style="left:30px;">空巢老人居家养老智能化系统——<br/>宁康智能床垫</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="context">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过调查确定了空巢老人的需求,初步设计空巢老人居家养老智能化系统，进一步围绕核心产品智能床垫完成竞争分析、功能和技术设计。</p>
+					<a class="rm" id="rm2" href="work2.html" target="_blank">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card"><!--第三个卡片-->
+            <div class="face face1">
+                <div class="context">
+                	<img src="img/p3.png">
+                    <h3 style="left:45px;">大数据下的综艺 ——<br/>明星大侦探为什么这么火</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="context">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以《明星大侦探》系列为研究对象，利用数据爬虫、词云图绘制、情感极性分析、基于划分的K-means聚类分析、基于LDA模型的文本主题聚类等算法，洞察分析出该档综艺的成功之处，并进一步归纳总结，为打造爆款推理类网综提供参考建议。</p>
+					<a class="rm" id="rm3" href="work3.html" target="_blank">Read More</a>
+                </div>
+            </div>
+		</div>
+	</div>
+    	
+<!-----start-portfolio------>
+	<div class="portfolio" id="portfolio">
+		<table class="potable" id="potable" border="0px">
+			<tr>
+				<td class="photo" id="photo">
+					<h3 style="height:120px;padding-top:60px;font-weight: 500;font-size: 28px;color: #343D49;">张春雨</h3>
+				</td>
+				<td class="skills" id="skills" rowspan="3">
+					<div class="skill">
+        				<div class="skill-name">Figma</div>
+        				<div class="skill-bar">
+          						<div class="skill-per" per="80"></div>
+        				</div>
+      				</div>
+      				<div class="skill">
+						<div class="skill-name">MyEclipse</div>
+						<div class="skill-bar">
+							<div class="skill-per" per="90"></div>
+						</div>
+					</div>
+					<div class="skill">
+						<div class="skill-name">Illustrator</div>
+						<div class="skill-bar">
+							<div class="skill-per" per="75"></div>
+						</div>
+					</div>
+					<div class="skill">
+        				<div class="skill-name">Photoshop</div>
+        				<div class="skill-bar">
+          						<div class="skill-per" per="70"></div>
+        				</div>
+      				</div>
+      				<div class="skill">
+        				<div class="skill-name">HTML+CSS</div>
+        				<div class="skill-bar">
+          						<div class="skill-per" per="60"></div>
+        				</div>
+      				</div>
+      				<div class="skill">
+        				<div class="skill-name">XD</div>
+        				<div class="skill-bar">
+          						<div class="skill-per" per="70"></div>
+        				</div>
+      				</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="me"><img src="img/me.png"/></td>
+			</tr>
+			<tr>
+				<td style="height:110px;"></td>
+			</tr>
+		</table>
+	</div>
+	<script>
+      $('.skill-per').each(function(){
+        var $this = $(this);
+        var per = $this.attr('per');
+        $this.css("width",per+'%');
+        $({animatedValue: 0}).animate({animatedValue: per},{
+          duration: 1000,
+          step: function(){
+            $this.attr('per', Math.floor(this.animatedValue) + '%');
+          },
+          complete: function(){
+            $this.attr('per', Math.floor(this.animatedValue) + '%');
+          }
+        });
+      });
+    </script>
+
+<!-----start-contact------>
+	<div class="contact" id="contact">
+		<table  class="ctable" border="0px">
+			<tr>
+				<td><img src="img/weixin.png" alt="" style="transform:scale(0.4);"/></td>
+				<td><img src="img/youjian.png" alt="" style="transform:scale(0.4);"/></td>
+				<td><img src="img/dianhua.png" alt="" style="transform:scale(0.4);"/></td>
+				</tr>
+			<tr>
+				<td valign="top">YukiZ929</td>
+				<td valign="top">www.1449471180@foxmail.com</td>
+				<td valign="top">19182554727</td>
+			</tr>
+		</table>
+	</div>
+	
+	<footer id="footer0">
+        <div class="row">
+            <div class="col span-1-of-2">
+                <div>
+                    designed &amp; coded by Zhang Chunyu © 2021
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
