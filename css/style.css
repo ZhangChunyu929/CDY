@@ -409,10 +409,10 @@ h1.loader {
 
 /*portfolio*/
 .potable{
-	width:1190px;
+	width:1100px;
 	padding-top:100px;
 	margin: 0 auto;
-	border-spacing:50px 0px;
+	border-spacing:40px 0px;
 	text-align:center;
 	font-size: 21px;
 	color: #8a8a8a;
@@ -423,12 +423,32 @@ h1.loader {
 	width: 300px;
 	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /*阴影*/
 }
+/*habit*/
+.habit {
+	right: 160px;
+	width:80px;
+	height:50px;
+    padding: 7px; /* 内边距 */ 
+    display: inline-block; /*设置为行内块元素*/
+    text-decoration: none; /*文字样式，此处为了删除下划线*/
+    font-size: 20px;
+    font-weight: 600; /*字体粗细*/
+    text-align:center;
+    color: #79899E;
+    border-radius: 20px; /* 边框圆角 */ 
+    border: 4px solid #79899E;
+    cursor: pointer; /* 鼠标样式 */
+}
+.potable a:hover{ /*此处为标签悬停时*/
+    background: #79899E; 
+    color: #fff; 
+}
 /*resume*/
 .resume {
   left:50%;
   width:100px;
   border: 3px solid #8a8a8a; /* 边框 */
-  padding: 3px 15px; /* 内边距 */
+  padding: 3px 10px; /* 内边距 */
   border-radius: 30px; /* 边框圆角 */
   cursor: pointer; /* 鼠标样式 */
   font-size: 20px; /* 字体大小 */

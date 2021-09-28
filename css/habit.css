@@ -1,0 +1,64 @@
+body {
+	margin: 0; /* 外边距 */
+	padding: 0; /* 内边距 */
+	background: #fff; /* 背景颜色 */
+	color: #555;
+	font-family:sans-serif;
+	font-size: 18px;
+	text-rendering: optimizeLegibility;
+	overflow-x: justify;
+	text-align: center;
+	font-weight: 300;
+}
+
+.t1, .t3, .t4, .t5, .t6, .t7 {
+	white-space: nowrap;
+	text-align: center;
+	padding:60px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.t1 img {
+	height: 25%;
+	width: 25%;
+}
+.t2 img {
+	height: 100%;
+	width: 100%;
+}
+
+.t4 img {
+	height: 50%;
+	width: 50%;
+}
+
+.t6 img {
+	height: 26%;
+	width: 26%;
+}
+.t7 img {
+	height: 60%;
+	width: 60%;
+}
+
+h1 {
+	font-size: 200%;
+	font-weight: 300;
+    word-spacing: 2px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+h1:after {
+    display: block;
+    height: 2px;
+    background-color: #bebebe;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
