@@ -1,3 +1,4 @@
+
 body {
 	margin: 0; /* 外边距 */
 	padding: 0; /* 内边距 */
@@ -15,31 +16,26 @@ body {
 	white-space: nowrap;
 	text-align: center;
 	padding:60px;
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
 }
 
 .t1 img {
-	height: 25%;
 	width: 25%;
 }
 .t2 img {
-	height: 100%;
 	width: 100%;
 }
 
 .t4 img {
-	height: 50%;
 	width: 50%;
 }
 
 .t6 img {
-	height: 26%;
-	width: 26%;
+	width: 24%;
 }
 .t7 img {
-	height: 60%;
-	width: 60%;
+	width: 70%;
 }
 
 h1 {
